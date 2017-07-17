@@ -1,0 +1,19 @@
+{
+  "name": "dawa-util",
+  "version": "0.1.0",
+  "description": "Diverse funktioner til brug i forbindelse med anvendelse af DAWA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanmarksAdresser/dawa-util.git"
+  },
+  "author": "Finn Jordal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanmarksAdresser/dawa-util/issues"
+  },
+  "homepage": "https://github.com/DanmarksAdresser/dawa-util#readme"
+}
