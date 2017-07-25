@@ -15,3 +15,9 @@ exports.formatAdresse= function (mini, enlinje) {
 	let supplerendebynavn= mini.supplerendebynavn?separator + mini.supplerendebynavn:"";
 	return `${mini.vejnavn} ${mini.husnr}${etagedør}${supplerendebynavn}${separator}${mini.postnr} ${mini.postnrnavn}`;	
 }
+
+exports.danUrl= function (path, query) {    
+  var url = new URL(path);
+  Object.keys(query).forEach(key => url.searchParams.append(key, query[key]));
+  return url;
+}
