@@ -1,6 +1,6 @@
 {
   "name": "dawa-util",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Diverse funktioner til brug i forbindelse med anvendelse af DAWA",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DanmarksAdresser/dawa-util/issues"
   },
-  "homepage": "https://github.com/DanmarksAdresser/dawa-util#readme"
+  "homepage": "https://github.com/DanmarksAdresser/dawa-util#readme",
+  "dependencies": {
+    "url-search-params": "^0.7.1"
+  }
 }

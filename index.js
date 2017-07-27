@@ -1,3 +1,5 @@
+var URLSearchParams = require('url-search-params');
+
 exports.corssupported= function () {
   return "withCredentials" in (new XMLHttpRequest());
 }
@@ -16,8 +18,8 @@ exports.formatAdresse= function (mini, enlinje) {
 	return mini.vejnavn + " " + mini.husnr + etagedør + supplerendebynavn + separator + mini.postnr + " " + mini.postnrnavn
 }
 
-exports.danUrl= function (path, query) {    
-  var url = new URL(path);
-  Object.keys(query).forEach(function(key) {url.searchParams.append(key, query[key])});
-  return url;
+exports.danUrl= function (path, query) { 
+  var params = new URLSearchParams();
+  Object.keys(query).forEach(function(key) {params.set(key, query[key])});
+  return path + "?" + params.toString();
 }
