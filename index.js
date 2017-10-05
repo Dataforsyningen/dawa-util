@@ -6,16 +6,16 @@ exports.corssupported= function () {
 
 function formatAa(vejnavn,husnr,supplerendebynavn,postnr,postnrnavn,enlinje) {
 	let separator= (enlinje || typeof enlinje != 'undefined')?", ":"<br/>";
-	let supplerendebynavn= supplerendebynavn?separator + supplerendebynavn:"";
+	supplerendebynavn= supplerendebynavn?separator + supplerendebynavn:"";
 	return `${vejnavn} ${husnr}${supplerendebynavn}${separator}${postnr} ${postnrnavn}`;
 }
 
 exports.formatAdgangsadresse= function (record, enlinje) {
 	if (record.vejstykke) {
-		formatAa(record.vejstykke.navn, record.husnr, record.supplerendebynavn, record.postnummer.nr, record.postnummer.navn, enlinje);
+		return formatAa(record.vejstykke.navn, record.husnr, record.supplerendebynavn, record.postnummer.nr, record.postnummer.navn, enlinje);
 	}
 	else {
-		formatAa(record.vejnavn, record.husnr, record.supplerendebynavn, record.postnr, record.postnrnavn, enlinje);
+		return formatAa(record.vejnavn, record.husnr, record.supplerendebynavn, record.postnr, record.postnrnavn, enlinje);
 	}	
 }
 
