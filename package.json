@@ -1,6 +1,10 @@
 {
   "name": "dawa-util",
+<<<<<<< Updated upstream
   "version": "0.1.4",
+=======
+  "version": "0.1.2",
+>>>>>>> Stashed changes
   "description": "Diverse funktioner til brug i forbindelse med anvendelse af DAWA",
   "main": "index.js",
   "scripts": {

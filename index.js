@@ -4,10 +4,19 @@ exports.corssupported= function () {
   return "withCredentials" in (new XMLHttpRequest());
 }
 
-exports.formatAdgangsadresse= function (mini, enlinje) {
+function formatAa(vejnavn,husnr,supplerendebynavn,postnr,postnrnavn,enlinje) {
 	let separator= (enlinje || typeof enlinje != 'undefined')?", ":"<br/>";
-	let supplerendebynavn= mini.supplerendebynavn?separator + mini.supplerendebynavn:"";
-	return mini.vejnavn + " " + mini.husnr + supplerendebynavn + separator + mini.postnr + " " + mini.postnrnavn;	
+	let supplerendebynavn= supplerendebynavn?separator + supplerendebynavn:"";
+	return `${vejnavn} ${husnr}${supplerendebynavn}${separator}${postnr} ${postnrnavn}`;
+}
+
+exports.formatAdgangsadresse= function (record, enlinje) {
+	if (record.vejstykke) {
+		formatAa(record.vejstykke.navn, record.husnr, record.supplerendebynavn, record.postnummer.nr, record.postnummer.navn, enlinje);
+	}
+	else {
+		formatAa(record.vejnavn, record.husnr, record.supplerendebynavn, record.postnr, record.postnrnavn, enlinje);
+	}	
 }
 
 exports.formatAdresse= function (mini, enlinje) {
