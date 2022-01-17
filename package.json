@@ -1,6 +1,6 @@
 {
-  "name": "dawa-util",
-  "version": "0.1.9",
+  "name": "@dawadk/dawa-util",
+  "version": "0.1.10",
   "description": "Diverse funktioner til brug i forbindelse med anvendelse af DAWA",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanmarksAdresser/dawa-util.git"
+    "url": "git+https://github.com/Dataforsyningen/dawa-util.git"
   },
   "author": "Finn Jordal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanmarksAdresser/dawa-util/issues"
+    "url": "https://github.com/Dataforsyningen/dawa-util/issues"
   },
-  "homepage": "https://github.com/DanmarksAdresser/dawa-util#readme",
+  "homepage": "https://github.com/Dataforsyningen/dawa-util#readme",
   "dependencies": {
-    "url-search-params": "^0.7.1"
+    "@ungap/url-search-params": "^0.2.2"
   }
 }
