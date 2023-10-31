@@ -9,6 +9,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "dawa",
+    "utilities",
+    "SDFI"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SDFIdk/dawa-util.git"
