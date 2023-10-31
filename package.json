@@ -1,6 +1,6 @@
 {
   "name": "@dawadk/dawa-util",
-  "version": "0.1.15",
+  "version": "0.2.0",
   "description": "Diverse funktioner til brug i forbindelse med anvendelse af DAWA",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dataforsyningen/dawa-util.git"
+    "url": "git+https://github.com/SDFIdk/dawa-util.git"
   },
-  "author": "Finn Jordal",
+  "author": {
+    "name": "Styrelsen for Dataforsyning og Infrastruktur",
+    "email": "support@sdfi.dk",
+    "url": "https://sdfi.dk/"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dataforsyningen/dawa-util/issues"
+    "url": "https://github.com/SDFIdk/dawa-util/issues"
   },
-  "homepage": "https://github.com/Dataforsyningen/dawa-util#readme",
+  "homepage": "https://github.com/SDFIdk/dawa-util/blob/master/README.md",
   "dependencies": {
     "@ungap/url-search-params": "^0.2.2"
   }
